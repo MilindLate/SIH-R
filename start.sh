@@ -15,9 +15,13 @@ echo "=========================================================="
 echo "📦 Checking Python requirements..."
 pip install -r "$BACKEND_DIR/requirements.txt" --quiet
 
+# Seed Database
+echo "🌱 Initializing database & seed data..."
+cd "$BACKEND_DIR"
+python3 seed_db.py
+
 # Start Backend Server
 echo "🚀 Starting FastAPI Backend at http://127.0.0.1:8000..."
-cd "$BACKEND_DIR"
 python3 -m uvicorn app:app --host 127.0.0.1 --port 8000 &
 BACKEND_PID=$!
 
