@@ -309,8 +309,8 @@ Run the included automated launcher from the repository root:
 
 ```bash
 # Clone the repository
-git clone https://github.com/MilindLate/SIH-R.git
-cd SIH-R
+git clone https://github.com/MilindLate/Material_Demand_Forecasting-Planning_System.git
+cd Material_Demand_Forecasting-Planning_System
 
 # Grant execution rights and run
 chmod +x start.sh
